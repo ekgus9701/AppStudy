@@ -3,7 +3,7 @@
 
 https://www.inflearn.com/course/%ED%98%84%EC%A7%81%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1/dashboard
 
-##강의 1
+## 강의 1
 ```
  android:orientation="vertical" //텍스트 방향
 <TextView
