@@ -11,5 +11,5 @@ android:layout_width="match_parent" //부모의 길이(기존 앱 넓이)만큼�
 android:layout_height="wrap_content" //텍스트 크기만큼 세로길이를 감싸라
 android:textColor="#8F64DD" //색 선택
 android:textSize="50sp" //텍스트 크기 선택 (sp단위)
-android:text="my first app"/>
+android:text="my first app"/> //텍스트 출력 및 TextView 끝내기
 ```
