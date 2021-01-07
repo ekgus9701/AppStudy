@@ -7,17 +7,16 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="match_parent" 
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:textColor="#8F64DD"
-        android:textSize="50sp"
-        android:text="my first app"/>
-    <TextView
-        android:layout_width="match_parent"
+        android:hint="아이디를 입력하세요."/>
+
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#DC799A"
-        android:textSize="20sp"
-        android:text="the basic app"/>
+        android:text="버튼"/>
 
 </LinearLayout>
