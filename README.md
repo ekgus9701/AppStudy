@@ -5,6 +5,8 @@ https://www.inflearn.com/course/%ED%98%84%EC%A7%81%EA%B0%9C%EB%B0%9C%EC%9E%90-%E
 
 ## 강의 1_TextView
 
+![#1_text view](https://user-images.githubusercontent.com/52192706/103891569-6bddac80-512d-11eb-898f-cb24b595dfee.JPG)
+
 1.기본적인 text 출력
 2. text 색 선택
 3. text 크기 선택
@@ -22,6 +24,8 @@ android:text="my first app"/> //텍스트 출력 및 TextView 끝내기
 ```
 
 ## 강의 2_EditText
+
+![#2 EditText](https://user-images.githubusercontent.com/52192706/103891573-6d0ed980-512d-11eb-910c-9ba26fbe959d.JPG)
 
 1. hint(연한색 text) text 만들기
 2. 버튼 만들기
