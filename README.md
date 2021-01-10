@@ -75,3 +75,37 @@ android:layout_width="300dp" //dp는 cm같은 단위
 
 </LinearLayout>
 ```
+
+## 강의 5_패키지 구조&역할 설명
+
+<res 패키지>
+-drawable: 주로 이미지 폴더를 담당
+-layout: 액티비티와 연결하는 레이아웃 파일들을 담당
+-mipmap: 기본 제공하는 앱 아이콘들이 존재
+-values 
+: 원하는 컬러 선언(colors.xml),
+: 긴 문장이나 중복이 많은 문장을 적고이용 (strings.xml)
+: 앱테마,커스텀테마 만듦(styles.xml)
+
+AndroidManifest.xml(manifests폴더를 클릭)
+```
+<application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher" //컨트롤클릭하면 기본 아이콘모양 설정가능
+        android:label="@string/app_name" //컨트롤클릭하면 앱실행시 이름 설정가능
+        android:roundIcon="@mipmap/ic_launcher_round" // 아이콘 둥글게 설정
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IntentEx"> //컨트롤클릭하면 앱의 테마 기본 3색 확인
+        <activity android:name=".SubActivity"></activity>
+	//manifest는 액티비티의 선언 담당
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" /> //이 액티비티가 MAIN
+
+                <category android:name="android.intent.category.LAUNCHER" /> //런처를 뜻함
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+```
