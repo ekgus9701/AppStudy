@@ -79,15 +79,23 @@ android:layout_width="300dp" //dp는 cm같은 단위
 ## 강의 5_패키지 구조&역할 설명
 
 <res 패키지>
+
 -drawable: 주로 이미지 폴더를 담당
+
 -layout: 액티비티와 연결하는 레이아웃 파일들을 담당
+
 -mipmap: 기본 제공하는 앱 아이콘들이 존재
+
 -values 
+
 : 원하는 컬러 선언(colors.xml),
+
 : 긴 문장이나 중복이 많은 문장을 적고이용 (strings.xml)
+
 : 앱테마,커스텀테마 만듦(styles.xml)
 
 AndroidManifest.xml(manifests폴더를 클릭)
+
 ```
 <application
         android:allowBackup="true"
