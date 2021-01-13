@@ -117,3 +117,47 @@ AndroidManifest.xml(manifests폴더를 클릭)
 
 </manifest>
 ```
+
+#### Emulator에서 공기계로 실행디바이스를 변경하면서 사진은 생략
+
+## 강의6_ListView
+
+- 세로(android:orientation="vertical")로 리스트를 만듦
+
+MainActivity.java
+
+```
+ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,data);
+        //list와 data를 담은 어댑터 생성
+
+        list.setAdapter(adapter);
+
+        data.add("HanDahyeon");
+        data.add("Android");
+        data.add("Example");
+
+        adapter.notifyDataSetChanged(); //이 상태를 현재 저장하겠다
+```
+
+
+## 강의7_Navigation Menu
+
+- 기본 네비게이션 메뉴로 설정한 후 설명을 들음 
+
+MainActivity.java
+```
+protected void onCreate(Bundle savedInstanceState) { //onCreate는 앱의 시작지점
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        FloatingActionButton fab = findViewById(R.id.fab); //버튼을 띄움
+```
+```
+ @Override
+    public boolean onCreateOptionsMenu(Menu menu) { //앱시작할때 옵션 메뉴 생성
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu); //템플릿에서 미리 만들어놓은 것을 가져옴
+        return true;
+    }
+```
